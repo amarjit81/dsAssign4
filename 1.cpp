@@ -12,7 +12,7 @@ public:
 
     void enqueue(int x) {
         if (isFull()) {
-            cout << "Queue is Full\n";
+            cout << "Queue is Full"<<endl;
             return;
         }
         if (isEmpty()) front = 0;
@@ -22,7 +22,7 @@ public:
 
     void dequeue() {
         if (isEmpty()) {
-            cout << "Queue is Empty\n";
+            cout << "Queue is Empty"<<endl;
             return;
         }
         cout << "Dequeued: " << arr[front] << endl;
@@ -31,7 +31,7 @@ public:
     }
 
     void display() {
-        if (isEmpty()) { cout << "Queue is Empty\n"; return; }
+        if (isEmpty()) { cout << "Queue is Empty"<<endl; return; }
         int i = front;
         cout << "Queue: ";
         while (true) {
@@ -44,7 +44,7 @@ public:
 
     void peek() {
         if (!isEmpty()) cout << "Front element: " << arr[front] << endl;
-        else cout << "Queue is Empty\n";
+        else cout << "Queue is Empty"<<endl;
     }
 };
 
@@ -52,7 +52,7 @@ int main() {
     Queue q;
     int choice, val;
     do {
-        cout << "\n1.Enqueue 2.Dequeue 3.Display 4.Peek 5.Exit\n";
+    cout <<endl<< "1.Enqueue 2.Dequeue 3.Display 4.Peek 5.Exit"<<endl;
         cin >> choice;
         switch (choice) {
             case 1: cout << "Enter value: "; cin >> val; q.enqueue(val); break;

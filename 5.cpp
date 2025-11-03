@@ -22,7 +22,7 @@ public:
 
     void top() {
         if (!q1.empty()) cout << "Top: " << q1.front() << endl;
-        else cout << "Stack Empty\n";
+        else cout << "Stack Empty"<<endl;
     }
 };
 

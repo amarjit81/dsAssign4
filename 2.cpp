@@ -23,7 +23,7 @@ public:
 
     void enqueue(int element) {
         if (isFull()) {
-            cout << "Queue is full\n";
+            cout << "Queue is full"<<endl;
             return;
         }
         if (front == -1) front = 0;
@@ -34,7 +34,7 @@ public:
 
     void dequeue() {
         if (isEmpty()) {
-            cout << "Queue is empty\n";
+            cout << "Queue is empty"<<endl;
             return;
         }
         int data = items[front];
@@ -49,7 +49,7 @@ public:
 
     void display() {
         if (isEmpty()) {
-            cout << "Queue is empty\n";
+            cout << "Queue is empty"<<endl;
             return;
         }
         cout << "Queue elements: ";
@@ -76,7 +76,7 @@ int main() {
     int choice, value;
 
     do {
-        cout << "\nCircular Queue Operations Menu\n";
+        cout << endl<<"Circular Queue Operations Menu"<<endl;
         cout << "1. Enqueue\n2. Dequeue\n3. Display\n4. Peek\n5. IsEmpty\n6. IsFull\n7. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -103,10 +103,10 @@ int main() {
                 cout << (q.isFull() ? "Queue is full\n" : "Queue is not full\n");
                 break;
             case 7:
-                cout << "Exiting...\n";
+                cout << "Exiting..."<<endl;
                 break;
             default:
-                cout << "Invalid choice, try again\n";
+                cout << "Invalid choice, try again"<<endl;
         }
     } while (choice != 7);
 

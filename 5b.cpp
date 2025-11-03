@@ -15,14 +15,14 @@ public:
     }
 
     void pop() {
-        if (q.empty()) { cout << "Stack Empty\n"; return; }
+        if (q.empty()) { cout << "Stack Empty"<<endl; return; }
         cout << "Popped: " << q.front() << endl;
         q.pop();
     }
 
     void top() {
         if (!q.empty()) cout << "Top: " << q.front() << endl;
-        else cout << "Stack Empty\n";
+        else cout << "Stack Empty"<<endl;
     }
 };
 

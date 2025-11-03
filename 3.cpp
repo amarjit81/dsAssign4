@@ -5,7 +5,7 @@ using namespace std;
 void interleaveQueue(queue<int>& q) {
     int n = q.size();
     if (n % 2 != 0) {
-        cout << "Queue size must be even\n";
+        cout << "Queue size must be even"<<endl;
         return;
     }
 

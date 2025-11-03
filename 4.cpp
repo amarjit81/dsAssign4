@@ -22,7 +22,7 @@ char firstNonRepeating(string s) {
 int main() {
     string s = "abcabc";
     char ans = firstNonRepeating(s);
-    if (ans == '-') cout << "No non-repeating char\n";
+    if (ans == '-') cout << "No non-repeating char"<<endl;
     else cout << "First non-repeating: " << ans << endl;
     return 0;
 }
